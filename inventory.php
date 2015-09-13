@@ -14,7 +14,11 @@
     
     //$rows = $result->num_rows;
     
-    echo"<table cellpadding=10 border=1>";
+    echo "<table cellpadding=10 border=1>";
+    echo "<th>Item</th>";
+    echo "<th>Description</th>";
+    echo "<th>Price</th>";
+    
     $rowarray = $result->fetchAll(PDO::FETCH_OBJ);
     foreach($rowarray as $row)
     {

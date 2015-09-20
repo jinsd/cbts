@@ -31,4 +31,8 @@
     echo "</table>";
     
     $db = null;
+
+    echo "<br>";
+    echo "<br>";
+    echo "<a href='insert.php'>Insert Item</a>";
 ?>

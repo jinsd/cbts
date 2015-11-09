@@ -17,8 +17,9 @@
     if (!$result) die ("Database access failed: " . $conn->error);
 
     else {
-    	echo "Successful";
-    	echo "<br>";
-    	echo "<a href='inventory.php'>Back to Inventory</a>";
+    	// echo "Successful";
+    	// echo "<br>";
+    	// echo "<a href='inventory.php'>Back to Inventory</a>";
+    	header("location:inventory.php");
     } 
 ?>

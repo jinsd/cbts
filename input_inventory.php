@@ -3,7 +3,7 @@
     
     try
         {
-            $db = new PDO($dsn, $un, $pw);
+            $db = new PDO("pgsql:host=$hn port=5432 dbname=$db user=$un password=$pw");
         }
     catch(PDOException $e)
         {die($e->getMessage());}
@@ -12,7 +12,7 @@
     $description=$_POST['description'];
     $price=$_POST['price'];
 
-    $sql = "INSERT INTO inventory (item, description, price) VALUES('$item', '$description', $price)";
+    $sql = "INSERT INTO inventory (id, item, description, price) VALUES(DEFAULT,'$item', '$description', $price)";
     $result = $db->query($sql);
     if (!$result) die ("Database access failed: " . $conn->error);
 

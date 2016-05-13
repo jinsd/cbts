@@ -1,0 +1,21 @@
+.main {
+    color: #40d;
+    font-family: "Helvetica Neue";
+    width: 400px;
+    padding: 25px;
+    border: 5px solid navy;
+    border-radius: 25px;
+}
+
+.invtab {
+    color: #87CEFA;
+    font-family: "Helvetica Neue";
+    width: 400px;
+    padding: 25px;
+    border: 5px solid gray;
+    border-radius: 25px;
+}
+
+table {
+    background: #87CEFA;
+}
